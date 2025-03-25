@@ -1,0 +1,115 @@
+:root {
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey-700: hsl(0, 0%, 20%);
+    --grey-800: hsl(0, 0%, 12%);
+    --grey-900: hsl(0, 0%, 8%)
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background-color: var(--grey-900);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 30px;
+}
+
+.attribution {
+    color: var(--white);
+}
+
+.card {
+    min-width: 386px;
+    min-height: 613px;
+    border-radius: 10px;
+    background-color: var(--grey-800);
+}
+
+.user_img {
+    border-radius: 100%;
+    width: 87px;
+    height: 87px;
+}
+
+.user_details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 38px 0;
+}
+
+.name {
+    text-align: center;
+    color: var(--white);
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+.address {
+    text-align: center;
+    color: var(--green);
+    font-size: 0.875rem;
+    font-weight: 700;
+}
+
+.quote {
+    color: var(--white);
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+button {
+    width: 304px;
+    height: 45px;
+    border: none;
+    border-radius: 10px;
+    background-color: var(--grey-700);
+    color: var(--white);
+    font-weight: 700;
+    font-size: 0.875rem;
+}
+
+button:hover {
+    background-color: var(--green);
+    cursor: pointer;
+    color: var(--grey-700);
+}
+
+.instabtn {
+    padding-bottom: 38px;
+}
+
+.social_links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+@media (max-width: 490px) {
+    .card {
+        min-width: 325px;
+    }
+
+    button {
+        width: 280px;
+        font-weight: 700;
+        font-size: 0.75rem;
+    }
+
+    .attribution {
+        font-size: 0.5rem;
+    }
+}
